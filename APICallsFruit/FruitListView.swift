@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FruitListView: View {
     @State var fruits = [Fruit]()
+    @State var searchValue: String = ""
     
     func getAllFruits() async -> () {
             do {
@@ -28,13 +29,18 @@ struct FruitListView: View {
             VStack{
                 
                 HStack{
-                    
+                
                 }
                 
-                List(fruits) { fruit in
+                List(searchResults) { fruit in
                     VStack(alignment: .leading) {
-                        NavigationLink("\(fruit.name)", destination: FruitFactsView()
-                        )
+                        NavigationLink("\(fruit.name)"){
+                            VStack{
+                                
+                                
+                                
+                            }.navigationTitle("\(fruit.name)")
+                        }
                     }
                 }
                 .task {
@@ -42,9 +48,19 @@ struct FruitListView: View {
                 }
                 
             }.navigationTitle("Fruits")
+                
             
+        }.searchable(text:$searchValue)
+    }
+    
+    var searchResults: [Fruit] {
+        if searchValue.isEmpty {
+            return fruits
+        } else {
+            return fruits.filter { $0.name.contains(searchValue)}
         }
     }
+    
 }
 
 struct FruitListView_Previews: PreviewProvider {
