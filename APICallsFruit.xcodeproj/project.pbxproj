@@ -13,7 +13,6 @@
 		2BE509842ABA5F6700E894A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE509832ABA5F6700E894A4 /* Preview Assets.xcassets */; };
 		2BE5098B2ABA5F8500E894A4 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5098A2ABA5F8500E894A4 /* Fruits.swift */; };
 		2BE5098D2ABA606000E894A4 /* FruitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5098C2ABA606000E894A4 /* FruitListView.swift */; };
-		2BE5098F2ABA606F00E894A4 /* FruitFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5098E2ABA606F00E894A4 /* FruitFactsView.swift */; };
 		2BE509912ABA637F00E894A4 /* FruitFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE509902ABA637F00E894A4 /* FruitFilterView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +24,6 @@
 		2BE509832ABA5F6700E894A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BE5098A2ABA5F8500E894A4 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 		2BE5098C2ABA606000E894A4 /* FruitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListView.swift; sourceTree = "<group>"; };
-		2BE5098E2ABA606F00E894A4 /* FruitFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitFactsView.swift; sourceTree = "<group>"; };
 		2BE509902ABA637F00E894A4 /* FruitFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				2BE509802ABA5F6700E894A4 /* Assets.xcassets */,
 				2BE5098C2ABA606000E894A4 /* FruitListView.swift */,
 				2BE5098A2ABA5F8500E894A4 /* Fruits.swift */,
-				2BE5098E2ABA606F00E894A4 /* FruitFactsView.swift */,
 				2BE509822ABA5F6700E894A4 /* Preview Content */,
 				2BE509902ABA637F00E894A4 /* FruitFilterView.swift */,
 			);
@@ -154,7 +151,6 @@
 				2BE5097D2ABA5F6600E894A4 /* APICallsFruitApp.swift in Sources */,
 				2BE5098B2ABA5F8500E894A4 /* Fruits.swift in Sources */,
 				2BE5098D2ABA606000E894A4 /* FruitListView.swift in Sources */,
-				2BE5098F2ABA606F00E894A4 /* FruitFactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

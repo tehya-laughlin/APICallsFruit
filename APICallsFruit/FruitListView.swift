@@ -28,19 +28,43 @@ struct FruitListView: View {
             
             VStack{
                 
-                HStack{
-                
-                }
-                
                 List(searchResults) { fruit in
                     VStack(alignment: .leading) {
                         NavigationLink("\(fruit.name)"){
                             VStack{
                                 
+                                Spacer()
+                                    .frame(width: 100.0, height: 100.0)
+                                
+                                Text("\(fruit.family) Family")
+                                    .font(.headline)
+                            
+                                Spacer()
+                                    .frame(width: 100.0, height: 100.0)
+
+                
+                                VStack(alignment: .leading){
+                                    Text("Nutrition Facts")
+                                        .font(.headline)
+                                        .padding(.bottom, 10)
+                                    Text("Calories: \(fruit.nutritions.calories)")
+                                    Text("Carbohydrates: \(fruit.nutritions.carbohydrates)")
+                                    Text("Fat: \(fruit.nutritions.fat)")
+                                    Text("Protein: \(fruit.nutritions.protein)")
+                                    Text("Sugar: \(fruit.nutritions.sugar)")
+                                }
+                                .padding(10)
+                                .border(Color.black, width: 3)
+                                
+                                
+                                Spacer()
                                 
                                 
                             }.navigationTitle("\(fruit.name)")
+                                
+                        
                         }
+                        
                     }
                 }
                 .task {
