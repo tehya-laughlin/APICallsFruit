@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        FruitListView()
+        GeometryReader{ geometry in
+            FruitListView(size: geometry.size)
+        }
     }
 }
 

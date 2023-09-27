@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7E3E4D2AC4C85A00A11BE7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E4C2AC4C85A00A11BE7 /* MenuView.swift */; };
+		2B7E3E512AC4CF7400A11BE7 /* FruitDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E502AC4CF7400A11BE7 /* FruitDetails.swift */; };
+		2B7E3E552AC4CFE000A11BE7 /* FruitLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E542AC4CFE000A11BE7 /* FruitLabel.swift */; };
 		2BE5097D2ABA5F6600E894A4 /* APICallsFruitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */; };
 		2BE5097F2ABA5F6600E894A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5097E2ABA5F6600E894A4 /* ContentView.swift */; };
 		2BE509812ABA5F6700E894A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE509802ABA5F6700E894A4 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B7E3E4C2AC4C85A00A11BE7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		2B7E3E502AC4CF7400A11BE7 /* FruitDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetails.swift; sourceTree = "<group>"; };
+		2B7E3E542AC4CFE000A11BE7 /* FruitLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLabel.swift; sourceTree = "<group>"; };
 		2BE509792ABA5F6600E894A4 /* APICallsFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APICallsFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallsFruitApp.swift; sourceTree = "<group>"; };
 		2BE5097E2ABA5F6600E894A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B7E3E562AC4D05100A11BE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B7E3E4C2AC4C85A00A11BE7 /* MenuView.swift */,
+				2B7E3E502AC4CF7400A11BE7 /* FruitDetails.swift */,
+				2B7E3E542AC4CFE000A11BE7 /* FruitLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B7E3E572AC4D05C00A11BE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BE5098A2ABA5F8500E894A4 /* Fruits.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B7E3E582AC4D08300A11BE7 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */,
+				2BE5097E2ABA5F6600E894A4 /* ContentView.swift */,
+				2BE5098C2ABA606000E894A4 /* FruitListView.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		2BE509702ABA5F6500E894A4 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +89,10 @@
 		2BE5097B2ABA5F6600E894A4 /* APICallsFruit */ = {
 			isa = PBXGroup;
 			children = (
-				2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */,
-				2BE5097E2ABA5F6600E894A4 /* ContentView.swift */,
 				2BE509802ABA5F6700E894A4 /* Assets.xcassets */,
-				2BE5098C2ABA606000E894A4 /* FruitListView.swift */,
-				2BE5098A2ABA5F8500E894A4 /* Fruits.swift */,
+				2B7E3E582AC4D08300A11BE7 /* View Model */,
+				2B7E3E572AC4D05C00A11BE7 /* Model */,
+				2B7E3E562AC4D05100A11BE7 /* Views */,
 				2BE509822ABA5F6700E894A4 /* Preview Content */,
 			);
 			path = APICallsFruit;
@@ -143,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7E3E4D2AC4C85A00A11BE7 /* MenuView.swift in Sources */,
+				2B7E3E552AC4CFE000A11BE7 /* FruitLabel.swift in Sources */,
 				2BE5097F2ABA5F6600E894A4 /* ContentView.swift in Sources */,
+				2B7E3E512AC4CF7400A11BE7 /* FruitDetails.swift in Sources */,
 				2BE5097D2ABA5F6600E894A4 /* APICallsFruitApp.swift in Sources */,
 				2BE5098B2ABA5F8500E894A4 /* Fruits.swift in Sources */,
 				2BE5098D2ABA606000E894A4 /* FruitListView.swift in Sources */,
