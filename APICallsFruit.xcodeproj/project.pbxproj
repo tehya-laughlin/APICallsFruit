@@ -63,8 +63,6 @@
 		2B7E3E582AC4D08300A11BE7 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */,
-				2BE5097E2ABA5F6600E894A4 /* ContentView.swift */,
 				2BE5098C2ABA606000E894A4 /* FruitListView.swift */,
 			);
 			path = "View Model";
@@ -90,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				2BE509802ABA5F6700E894A4 /* Assets.xcassets */,
+				2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */,
+				2BE5097E2ABA5F6600E894A4 /* ContentView.swift */,
 				2B7E3E582AC4D08300A11BE7 /* View Model */,
 				2B7E3E572AC4D05C00A11BE7 /* Model */,
 				2B7E3E562AC4D05100A11BE7 /* Views */,
