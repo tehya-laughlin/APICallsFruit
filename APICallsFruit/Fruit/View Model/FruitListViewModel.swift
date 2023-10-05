@@ -34,20 +34,19 @@ struct FruitListView: View {
     }
     
     func getAllFruits() async -> () {
-            do {
-                let url = URL(string: "https://www.fruityvice.com/api/fruit/all")!
-                let (data, _) = try await URLSession.shared.data(from: url)
-                print(data)
-                fruits = try JSONDecoder().decode([Fruit].self, from: data)
-            } catch {
-                print("Error: \(error.localizedDescription)")
-            }
+        do {
+            let url = URL(string: "https://www.fruityvice.com/api/fruit/all")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            print(data)
+            fruits = try JSONDecoder().decode([Fruit].self, from: data)
+        } catch {
+            print("Error: \(error.localizedDescription)")
         }
+    }
     
     var body: some View {
-        
+    
         NavigationView {
-            
             VStack{
                     
                 MenuView(isFiltered: $genFamOrderToggle)

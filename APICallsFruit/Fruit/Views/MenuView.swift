@@ -12,12 +12,12 @@ struct MenuView: View {
     
     var body: some View {
         Menu {
-                Button("Filter by family, order, or genus"){
-                    isFiltered = true
-                }
-                Button("Filter by name"){
-                    isFiltered = false
-                }
+            Button("Filter by family, order, or genus"){
+                isFiltered = true
+            }
+            Button("Filter by name"){
+                isFiltered = false
+            }
                 
         } label: {
             Label("Filters", systemImage: "menucard.fill")

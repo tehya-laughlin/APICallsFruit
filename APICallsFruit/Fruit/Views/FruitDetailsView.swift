@@ -109,7 +109,6 @@ struct FruitDetails: View {
             .padding(.all)
 
         }.navigationTitle("\(fruit.name)")
-        
     }
 }
 
