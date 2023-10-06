@@ -42,7 +42,7 @@ struct FruitDetails: View {
             HStack{
                 ZStack{
                     Circle()
-                        .foregroundColor(Color("Micros"))
+                        .foregroundColor(Color("AccentColor"))
                         
                     Text("Fats")
                         .foregroundColor(Color.white)
@@ -52,7 +52,7 @@ struct FruitDetails: View {
                 ZStack{
                     Rectangle()
                         .foregroundColor(Color.blue.opacity(0.0))
-                        .border(Color("Micros"), width: 3)
+                        .border(Color("AccentColor"), width: 3)
                     
                     Text("\(fruit.nutritions.fat, specifier: "%.2f") g")
                         .font(.title2)
@@ -65,7 +65,7 @@ struct FruitDetails: View {
             HStack{
                 ZStack{
                     Circle()
-                        .foregroundColor(Color("Micros"))
+                        .foregroundColor(Color("AccentColor"))
                         
                     Text("Sugar")
                         .foregroundColor(Color.white)
@@ -75,7 +75,7 @@ struct FruitDetails: View {
                 ZStack{
                     Rectangle()
                         .foregroundColor(Color.blue.opacity(0.0))
-                        .border(Color("Micros"), width: 3)
+                        .border(Color("AccentColor"), width: 3)
                     
                     Text("\(fruit.nutritions.sugar, specifier: "%.2f") g")
                         .font(.title2)
@@ -88,7 +88,7 @@ struct FruitDetails: View {
             HStack{
                 ZStack{
                     Circle()
-                        .foregroundColor(Color("Micros"))
+                        .foregroundColor(Color("AccentColor"))
                         
                     Text("Protein")
                         .foregroundColor(Color.white)
@@ -98,7 +98,7 @@ struct FruitDetails: View {
                 ZStack{
                     Rectangle()
                         .foregroundColor(Color.blue.opacity(0.0))
-                        .border(Color("Micros"), width: 3)
+                        .border(Color("AccentColor"), width: 3)
                     
                     Text("\(fruit.nutritions.protein, specifier: "%.2f") g")
                         .font(.title2)

@@ -13,6 +13,12 @@
 		2B7E3E6F2ACF5E4100A11BE7 /* FruitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E6E2ACF5E4100A11BE7 /* FruitListViewModel.swift */; };
 		2B7E3E712ACF662300A11BE7 /* FruitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E702ACF662300A11BE7 /* FruitListView.swift */; };
 		2B7E3E732ACF761000A11BE7 /* DataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E722ACF761000A11BE7 /* DataClient.swift */; };
+		2B7E3E7A2AD095E900A11BE7 /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E792AD095E900A11BE7 /* BlockModel.swift */; };
+		2B7E3E7C2AD0967300A11BE7 /* BlockDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E7B2AD0967300A11BE7 /* BlockDisplayView.swift */; };
+		2B7E3E7E2AD0968A00A11BE7 /* Squares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E7D2AD0968A00A11BE7 /* Squares.swift */; };
+		2B7E3E802AD096A700A11BE7 /* BlocksEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E7F2AD096A700A11BE7 /* BlocksEditView.swift */; };
+		2B7E3E822AD096CC00A11BE7 /* RadiiVSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E812AD096CC00A11BE7 /* RadiiVSheet.swift */; };
+		2B7E3E842AD096E100A11BE7 /* NewBlocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E832AD096E100A11BE7 /* NewBlocksView.swift */; };
 		2BE5097D2ABA5F6600E894A4 /* APICallsFruitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */; };
 		2BE5097F2ABA5F6600E894A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5097E2ABA5F6600E894A4 /* ContentView.swift */; };
 		2BE509812ABA5F6700E894A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE509802ABA5F6700E894A4 /* Assets.xcassets */; };
@@ -27,6 +33,12 @@
 		2B7E3E6E2ACF5E4100A11BE7 /* FruitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewModel.swift; sourceTree = "<group>"; };
 		2B7E3E702ACF662300A11BE7 /* FruitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListView.swift; sourceTree = "<group>"; };
 		2B7E3E722ACF761000A11BE7 /* DataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClient.swift; sourceTree = "<group>"; };
+		2B7E3E792AD095E900A11BE7 /* BlockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
+		2B7E3E7B2AD0967300A11BE7 /* BlockDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDisplayView.swift; sourceTree = "<group>"; };
+		2B7E3E7D2AD0968A00A11BE7 /* Squares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squares.swift; sourceTree = "<group>"; };
+		2B7E3E7F2AD096A700A11BE7 /* BlocksEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksEditView.swift; sourceTree = "<group>"; };
+		2B7E3E812AD096CC00A11BE7 /* RadiiVSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiiVSheet.swift; sourceTree = "<group>"; };
+		2B7E3E832AD096E100A11BE7 /* NewBlocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBlocksView.swift; sourceTree = "<group>"; };
 		2BE509792ABA5F6600E894A4 /* APICallsFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APICallsFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallsFruitApp.swift; sourceTree = "<group>"; };
 		2BE5097E2ABA5F6600E894A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +85,45 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		2B7E3E752AD0959E00A11BE7 /* FruitInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2B7E3E582AC4D08300A11BE7 /* View Model */,
+				2B7E3E572AC4D05C00A11BE7 /* Model */,
+				2B7E3E562AC4D05100A11BE7 /* Views */,
+			);
+			path = FruitInfo;
+			sourceTree = "<group>";
+		};
+		2B7E3E762AD095AA00A11BE7 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				2B7E3E782AD095CF00A11BE7 /* Views */,
+				2B7E3E772AD095C700A11BE7 /* Model */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		2B7E3E772AD095C700A11BE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B7E3E792AD095E900A11BE7 /* BlockModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B7E3E782AD095CF00A11BE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B7E3E7B2AD0967300A11BE7 /* BlockDisplayView.swift */,
+				2B7E3E7D2AD0968A00A11BE7 /* Squares.swift */,
+				2B7E3E7F2AD096A700A11BE7 /* BlocksEditView.swift */,
+				2B7E3E812AD096CC00A11BE7 /* RadiiVSheet.swift */,
+				2B7E3E832AD096E100A11BE7 /* NewBlocksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2BE509702ABA5F6500E894A4 = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +147,8 @@
 				2BE509802ABA5F6700E894A4 /* Assets.xcassets */,
 				2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */,
 				2BE5097E2ABA5F6600E894A4 /* ContentView.swift */,
-				2B7E3E582AC4D08300A11BE7 /* View Model */,
-				2B7E3E572AC4D05C00A11BE7 /* Model */,
-				2B7E3E562AC4D05100A11BE7 /* Views */,
+				2B7E3E762AD095AA00A11BE7 /* Blocks */,
+				2B7E3E752AD0959E00A11BE7 /* FruitInfo */,
 				2BE509822ABA5F6700E894A4 /* Preview Content */,
 			);
 			path = APICallsFruit;
@@ -182,13 +232,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7E3E822AD096CC00A11BE7 /* RadiiVSheet.swift in Sources */,
+				2B7E3E7E2AD0968A00A11BE7 /* Squares.swift in Sources */,
 				2B7E3E4D2AC4C85A00A11BE7 /* MenuView.swift in Sources */,
 				2B7E3E552AC4CFE000A11BE7 /* FruitLabelView.swift in Sources */,
 				2BE5097F2ABA5F6600E894A4 /* ContentView.swift in Sources */,
+				2B7E3E802AD096A700A11BE7 /* BlocksEditView.swift in Sources */,
 				2B7E3E712ACF662300A11BE7 /* FruitListView.swift in Sources */,
 				2B7E3E512AC4CF7400A11BE7 /* FruitDetailsView.swift in Sources */,
+				2B7E3E7C2AD0967300A11BE7 /* BlockDisplayView.swift in Sources */,
+				2B7E3E842AD096E100A11BE7 /* NewBlocksView.swift in Sources */,
 				2B7E3E732ACF761000A11BE7 /* DataClient.swift in Sources */,
 				2BE5097D2ABA5F6600E894A4 /* APICallsFruitApp.swift in Sources */,
+				2B7E3E7A2AD095E900A11BE7 /* BlockModel.swift in Sources */,
 				2B7E3E6F2ACF5E4100A11BE7 /* FruitListViewModel.swift in Sources */,
 				2BE5098B2ABA5F8500E894A4 /* Fruits.swift in Sources */,
 			);
