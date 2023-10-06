@@ -21,7 +21,7 @@ struct MenuView: View {
                 
         } label: {
             Label("Filters", systemImage: "menucard.fill")
-                .foregroundColor(Color("Title"))
+                .foregroundColor(Color("Calories"))
         }
     }
 }
