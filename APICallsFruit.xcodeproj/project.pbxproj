@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0BACFE2AD723D700BAEF42 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BACFD2AD723D700BAEF42 /* MapView.swift */; };
 		2B7E3E4D2AC4C85A00A11BE7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E4C2AC4C85A00A11BE7 /* MenuView.swift */; };
 		2B7E3E512AC4CF7400A11BE7 /* FruitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E502AC4CF7400A11BE7 /* FruitDetailsView.swift */; };
 		2B7E3E552AC4CFE000A11BE7 /* FruitLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E542AC4CFE000A11BE7 /* FruitLabelView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0BACFD2AD723D700BAEF42 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2B7E3E4C2AC4C85A00A11BE7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		2B7E3E502AC4CF7400A11BE7 /* FruitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsView.swift; sourceTree = "<group>"; };
 		2B7E3E542AC4CFE000A11BE7 /* FruitLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLabelView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				2BE509802ABA5F6700E894A4 /* Assets.xcassets */,
 				2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */,
 				2BE5097E2ABA5F6600E894A4 /* ContentView.swift */,
+				2B0BACFD2AD723D700BAEF42 /* MapView.swift */,
 				2B7E3E762AD095AA00A11BE7 /* Blocks */,
 				2B7E3E752AD0959E00A11BE7 /* FruitInfo */,
 				2BE509822ABA5F6700E894A4 /* Preview Content */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B7E3E822AD096CC00A11BE7 /* RadiiVSheet.swift in Sources */,
+				2B0BACFE2AD723D700BAEF42 /* MapView.swift in Sources */,
 				2B7E3E7E2AD0968A00A11BE7 /* Squares.swift in Sources */,
 				2B7E3E4D2AC4C85A00A11BE7 /* MenuView.swift in Sources */,
 				2B7E3E552AC4CFE000A11BE7 /* FruitLabelView.swift in Sources */,
@@ -383,6 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

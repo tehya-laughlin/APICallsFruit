@@ -34,6 +34,10 @@ struct ContentView: View {
                 }
                 .accentColor(Color("Calories"))
                 
+                MapView().tabItem{
+                    Label("Map", systemImage:"globe")
+                }.accentColor(Color("Calories"))
+                
             }
             .accentColor(Color("AccentColor"))
         }
