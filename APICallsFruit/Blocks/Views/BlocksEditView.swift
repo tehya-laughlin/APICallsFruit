@@ -16,6 +16,7 @@ struct BlocksEdit: View {
     @State var isNewAdded: Bool = false;
     @State var color: Color = Color.blue
     let size: CGSize
+    var notifications: PushNotificationService
     
     var body: some View {
         NavigationView {
@@ -44,6 +45,11 @@ struct BlocksEdit: View {
                     
                     radii = [0,0,0,0,0]
                     isNewAdded = true
+                    
+                    notifications.scheduleNotification(
+                        title: "New Blocks",
+                        subtitle: "New Blocks have been added!"
+                    )
                     
                 }.padding(.top, 30)
                 
