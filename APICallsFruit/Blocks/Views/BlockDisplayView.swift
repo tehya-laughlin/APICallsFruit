@@ -13,6 +13,7 @@ struct BlocksDisplay: View {
     @Binding var blockStyles: [BlockStyle]
     @State var isShowingAlert: Bool
     let size: CGSize
+    var notifications: PushNotificationService
     
     var body: some View {
         NavigationView{
@@ -28,6 +29,11 @@ struct BlocksDisplay: View {
                     Button("Cancel", role: .cancel) {}
                 }
                 .padding(.top, 30)
+                
+                Button("Want to be notified when blocks are added?") {
+                    notifications.requestPermissions()
+                }
+                .padding(.vertical, 16)
                 
                 ScrollView{
                     VStack {

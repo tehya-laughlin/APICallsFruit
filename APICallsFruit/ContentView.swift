@@ -11,6 +11,8 @@ struct ContentView: View {
     @State var blockStyles: [BlockStyle] = []
     @State var oneStyle: BlockStyle = BlockStyle(radii: [0,0,0,0,0], color: Color.blue)
     
+    var notification = PushNotificationService()
+    
     init(){
         UITabBar.appearance().backgroundColor = UIColor.white
     }
@@ -19,12 +21,12 @@ struct ContentView: View {
         GeometryReader{ geometry in
             
             TabView {
-                BlocksDisplay(blockStyles: $blockStyles, isShowingAlert: false, size: geometry.size).tabItem{
+                BlocksDisplay(blockStyles: $blockStyles, isShowingAlert: false, size: geometry.size, notifications: notification).tabItem{
                     Label("Blocks", systemImage:"square.fill")
                 }
                 .accentColor(Color("Calories"))
                 
-                BlocksEdit(blockStyles: $blockStyles, blockSee: $oneStyle, size: geometry.size).tabItem{
+                BlocksEdit(blockStyles: $blockStyles, blockSee: $oneStyle, size: geometry.size, notifications: notification).tabItem{
                     Label("Edit Blocks", systemImage:"gearshape.fill")
                 }
                 .accentColor(Color("Calories"))
@@ -34,7 +36,7 @@ struct ContentView: View {
                 }
                 .accentColor(Color("Calories"))
                 
-                MapView().tabItem{
+                MapView(size: geometry.size).tabItem{
                     Label("Map", systemImage:"globe")
                 }.accentColor(Color("Calories"))
                 

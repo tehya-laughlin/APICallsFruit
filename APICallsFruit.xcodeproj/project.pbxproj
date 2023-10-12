@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B0BACFE2AD723D700BAEF42 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0BACFD2AD723D700BAEF42 /* MapView.swift */; };
+		2B55069C2AD7485F001FE142 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B55069B2AD7485F001FE142 /* NotificationService.swift */; };
 		2B7E3E4D2AC4C85A00A11BE7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E4C2AC4C85A00A11BE7 /* MenuView.swift */; };
 		2B7E3E512AC4CF7400A11BE7 /* FruitDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E502AC4CF7400A11BE7 /* FruitDetailsView.swift */; };
 		2B7E3E552AC4CFE000A11BE7 /* FruitLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E3E542AC4CFE000A11BE7 /* FruitLabelView.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		2B0BACFD2AD723D700BAEF42 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2B55069B2AD7485F001FE142 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		2B7E3E4C2AC4C85A00A11BE7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		2B7E3E502AC4CF7400A11BE7 /* FruitDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsView.swift; sourceTree = "<group>"; };
 		2B7E3E542AC4CFE000A11BE7 /* FruitLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitLabelView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B55069D2AD74976001FE142 /* Misc Services and Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B7E3E722ACF761000A11BE7 /* DataClient.swift */,
+				2B0BACFD2AD723D700BAEF42 /* MapView.swift */,
+				2B55069B2AD7485F001FE142 /* NotificationService.swift */,
+			);
+			path = "Misc Services and Views";
+			sourceTree = "<group>";
+		};
 		2B7E3E562AC4D05100A11BE7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,11 +157,10 @@
 		2BE5097B2ABA5F6600E894A4 /* APICallsFruit */ = {
 			isa = PBXGroup;
 			children = (
-				2B7E3E722ACF761000A11BE7 /* DataClient.swift */,
 				2BE509802ABA5F6700E894A4 /* Assets.xcassets */,
 				2BE5097C2ABA5F6600E894A4 /* APICallsFruitApp.swift */,
 				2BE5097E2ABA5F6600E894A4 /* ContentView.swift */,
-				2B0BACFD2AD723D700BAEF42 /* MapView.swift */,
+				2B55069D2AD74976001FE142 /* Misc Services and Views */,
 				2B7E3E762AD095AA00A11BE7 /* Blocks */,
 				2B7E3E752AD0959E00A11BE7 /* FruitInfo */,
 				2BE509822ABA5F6700E894A4 /* Preview Content */,
@@ -193,7 +204,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					2BE509782ABA5F6600E894A4 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -244,6 +255,7 @@
 				2B7E3E802AD096A700A11BE7 /* BlocksEditView.swift in Sources */,
 				2B7E3E712ACF662300A11BE7 /* FruitListView.swift in Sources */,
 				2B7E3E512AC4CF7400A11BE7 /* FruitDetailsView.swift in Sources */,
+				2B55069C2AD7485F001FE142 /* NotificationService.swift in Sources */,
 				2B7E3E7C2AD0967300A11BE7 /* BlockDisplayView.swift in Sources */,
 				2B7E3E842AD096E100A11BE7 /* NewBlocksView.swift in Sources */,
 				2B7E3E732ACF761000A11BE7 /* DataClient.swift in Sources */,
@@ -293,6 +305,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -307,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -353,6 +366,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -361,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
